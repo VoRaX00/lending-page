@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+    background: #FFF1EE;
+}
+
+.navbar {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    overflow: hidden;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 68px;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+    position: relative;
+    z-index: 1;
+    margin-top: 10px;
+    padding-left: 40px;
+}   
+
+.menu-wrapper {
+    position: relative;
+    min-width: 600px;
+    min-height: 150px;
+    margin-right: 40px;
+}
+
+.menu-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 800px;
+    height: 200px;
+    background-image: url('../assets/облако.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #DE4E29;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    position: relative;
+    z-index: 2;
+}
+
+.menu a::before {
+    content: '';
+    width: 19px;
+    height: 17.46px;
+    background-image: url('../assets/menu-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 8px;
+}
+
+/* Левое облако */
+.navbar::before {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    left: 40px;
+    top: -20px;
+    background-image: url('../assets/Vector\ 7.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0;
+}
+
+/* Убираем правое SVG облако, так как теперь используем PNG */
+.navbar::after {
+    display: none;
+}
+
+.logo {
+    font-size: 48px;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 50px;
+    display: flex;
+    gap: 2px;
+}
+
+.logo span {
+    display: inline-block;
+    transform-origin: center;
+}
+
+/* Индивидуальные цвета для каждой буквы */
+.logo span:nth-child(1) { color: #F8C9AD; transform: rotate(-10deg); } /* П */
+.logo span:nth-child(2) { color: #78B951; transform: rotate(10deg); } /* О */
+.logo span:nth-child(3) { color: #F8C9AD; transform: rotate(-5deg); } /* Л */
+.logo span:nth-child(4) { color: #E4441B; transform: rotate(8deg); } /* Е */
+.logo span:nth-child(5) { color: #F8C9AD; transform: rotate(-7deg); } /* Т */
+.logo span:nth-child(6) { color: #4C96FF; transform: rotate(6deg); } /* А */
+.logo span:nth-child(7) { color: #F8C9AD; transform: rotate(-9deg); } /* Е */
+.logo span:nth-child(8) { color: #FFE355; transform: rotate(7deg); } /* М */
+
+.additional-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #DE4E29;
+    position: relative;
+    z-index: 1;
+    margin-left: 0;
+}
