@@ -7,7 +7,7 @@
 body {
     overflow-x: hidden;
     width: 100%;
-    background: #FFF1EE;
+    background: #f3e4db;
 }
 
 .navbar {
@@ -51,7 +51,7 @@ body {
     right: -40px;
     width: 800px;
     height: 200px;
-    background-image: url('../assets/облако.png');
+    background-image: url('../../assets/облако.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -73,7 +73,7 @@ body {
     content: '';
     width: 19px;
     height: 17.46px;
-    background-image: url('../assets/menu-icon.png');
+    background-image: url('../../assets/menu-icon.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -88,7 +88,7 @@ body {
     height: 200px;
     left: 40px;
     top: -20px;
-    background-image: url('../assets/Vector\ 7.png');
+    background-image: url('../../assets/Vector\ 7.png');
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 0;
